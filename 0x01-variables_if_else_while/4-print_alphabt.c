@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - a program that prints all the letters of the alphabet 
- * expect q and e
+ * main - a program that prints all the letters of the alphabet expect q and e
  *
  * Return: Always  0 (Successs)
  */
