@@ -3,18 +3,18 @@
 /**
  * print_alphabet_x10 - a function that prints alphabet ten times
  */
-
-void print_alphabet(void)
+int main(void)
 {
+	void print_alphabet(void)
+	{	
 	int i;
 	int c;
 
-	i = 0;
-	while (i < 10)
+	for (i = 0;i < 10; i++)
 	{
 		for (c = 'a'; c <= 'z'; c++)
 		_putchar(c);
 	}
-	i++;
-	_putchar(c);
+	_putchar('\n');
+	}
 }
