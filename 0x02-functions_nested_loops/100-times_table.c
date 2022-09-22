@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_times_table - a function that prints the times table of a number
- *@n: the input
+ * print_times_table - a function that prints the times table of a num
+ *@n: the value  to be multiplied
  */
 
 void print_times_table(int n)
@@ -15,34 +15,29 @@ void print_times_table(int n)
 		{
 			for (y = 0; y <= n; y++)
 			{
-			z = x * y;
-			if (z > 99)
-			{
-				_putchar(',');
-				_putchar(32);
-				_putchar((z / 10) + '0');
-				_putchar((z / 10) + '0');
-				_putchar((z % 10) + '0');
-			}
-			else if (z > 9)
-			{
-				_putchar(',');
-				_putchar(32);
-				_putchar(32);
-				_putchar((z / 10) + '0');
-				_putchar((z % 10) + '0');
-			}
-			else
-			{
-				if (y != 0)
+				_putchar('.');
+				_putchar(' ');
+
+				z = x * y;
+			
+				if (z >= 100)
 				{
-					_putchar(',');
-					_putchar(32);
-					_putchar(32);
-					_putchar(32);
+					_putchar((z / 10) + '0');
+					_putchar(((z / 10)) % 10 + '0');
 				}
-				_putchar(z + '0');
-			}
+				if (z <= 99)
+				{
+					_putchar(' ');
+				}
+				if (z <= 9)
+				{
+					_putchar(' ');
+				}
+				else if (z <= 99 && z >= 10)
+				{
+					_putchar((z / 10) + '0');
+				}
+				_putchar((z % 10) + '0');
 			}
 		_putchar('\n');
 		}
