@@ -19,17 +19,19 @@ int main(void)
 	{
 
 		fibsum = fib1 + fib2;
-
+		{
 		if (fibsum > 4000000)
-		       break;
-		
+			break;
+		}
+		{
 		if ((fibsum % 2) == 0)
 			sum = fibsum + sum;
-		
+		}
+
 		fib1 = fib2;
 		fib2 = fibsum;
 	}
 	printf("%.0f\n", sum);
 
 	return (0);
-}	
+}
