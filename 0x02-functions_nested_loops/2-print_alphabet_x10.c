@@ -3,10 +3,9 @@
 /**
  * print_alphabet_x10 - a function that prints alphabet ten times
  */
-int main(void)
-{
-	void print_alphabet(void)
-	{	
+
+void print_alphabetx10(void)
+{	
 	int i;
 	int c;
 
@@ -16,5 +15,5 @@ int main(void)
 		_putchar(c);
 	}
 	_putchar('\n');
-	}
 }
+
