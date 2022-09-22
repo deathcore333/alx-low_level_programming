@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - prints all natural numbers from n to 98
- *@n: starting number; 
+ *@n: starting number
  */
 
 void print_to_98(int n)
@@ -15,10 +15,8 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (n = n; n >= 98; n--)
+		for (n = n; n >= 99; n--)
 			printf("%d, ", n);
 	}
 	printf("98\n");
 }
-
-	
