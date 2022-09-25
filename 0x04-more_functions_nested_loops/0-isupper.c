@@ -2,6 +2,7 @@
 
 /**
  *_isuppper - a function that checks if a character is uppercase
+ *@c: the character under assessment
  *
  * Return: c if character is uppercase and 0 otherwise
  */
