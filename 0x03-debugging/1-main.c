@@ -7,18 +7,19 @@
 
 int main(void)
 {
-        int i;
+	int i;
 
 	printf("Infinite loop incoming :(\n");
 
-        i = 0;
+	i = 0;
 
-        while (i < 10)
-        {
-                putchar(i);
-        }
+	while (i < 10)
+	{
+		putchar(i);
+		i++;
+	}
 /* no incremment set for int i hence the program is stuck in a loop that prints 0 */
-        printf("Infinite loop avoided! \\o/\n");
+	printf("Infinite loop avoided! \\o/\n");
 
-        return (0);
+	return (0);
 }
