@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - a function that distinguishes prime numbers by composite numbers 
+ * main - a program that prints the largest prime factor of a number 612852475143 
  *
  * Return: Always 0
  */
