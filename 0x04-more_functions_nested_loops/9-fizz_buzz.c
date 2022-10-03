@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * a function that prints all the numbers expect multiples of three and five
- *
+ * main - a function that prints all the numbers expect multiples of three and five. Fizz for multiples of three and buzz for multiples of three. Fizzbuzz for
+ * 	both
  * Return: Always (0)
  */
 
