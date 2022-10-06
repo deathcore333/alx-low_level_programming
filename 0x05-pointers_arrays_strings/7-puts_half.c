@@ -3,7 +3,6 @@
 /**
  * puts_half - a function that prints half a string
  *@str = string
- * Return: void
  */
 
 void puts_half(char *str)
