@@ -2,8 +2,8 @@
 #include <string.h>
 
 /**
- * print_rev - a program that prints a string in reverse
- *@str: string
+ * print_rev - a program tha displays a string in reverse
+ * @str: string
  * Return: void
  */
 
@@ -20,5 +20,4 @@ void print_rev(char *s)
 		}
 	}
 	_putchar('\n');
-}
-			
+}			
