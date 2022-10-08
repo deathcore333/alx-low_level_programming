@@ -3,7 +3,7 @@
 /**
  * _strncpy - a function that copies n bytes of src to the dest string
  * @dest: the destination string
- * @src: the string to copy 
+ * @src: the string to copy
  * @n: largest number of bytes to copy
  *
  * Return: destination address
