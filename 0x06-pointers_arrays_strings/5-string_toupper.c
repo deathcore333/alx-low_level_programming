@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * string_toupper - a function that converts all lowercase letters of a string to uppercase
+ * string_toupper - a function that converts all
+ * lowercase letters of a string to uppercase
+ * @s: the string
  *
  * Return: string
  */
