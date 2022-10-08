@@ -3,7 +3,7 @@
 /**
  * _strcat - appends src to the dest string
  * @dest: the string to append by src
- * @dest: the string to append to dest
+ * @src: the string to append to dest
  *
  * Return: address of dest
  */
