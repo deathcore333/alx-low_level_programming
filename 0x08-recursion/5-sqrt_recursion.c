@@ -6,7 +6,7 @@
  *
  * Return: square root othwrwise -1
  */
-int sqrt_check;
+int sqrt_check(int g, int c);
 
 int _sqrt_recursion(int n)
 {
@@ -24,12 +24,12 @@ int _sqrt_recursion(int n)
  * Return: natural square or -1
  */
 
-int sqrt_check
+int sqrt_check(int g, int c)
 {
 	if (g * g == c)
 		return (g);
 	else if (g *g > c)
 		return (-1);
 	else
-		return (srt_check(1, n));
+		return (sqrt_check(g + 1, c));
 }
