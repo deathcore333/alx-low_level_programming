@@ -2,9 +2,9 @@
 
 /**
  * _sqrt_recursion - function that returns the natural square root of n
- * @n: the number to find sqrt
+ * @n: integer
  * @g: guess sqrt
- * @c: number to check 
+ * @c: number to check
  *
  * Return: square root othwrwise -1
  */
