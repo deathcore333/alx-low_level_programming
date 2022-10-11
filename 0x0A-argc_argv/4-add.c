@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 /**
  * main - program that adds positive numbers
  * @argc: argument count
@@ -31,8 +32,8 @@ int main(int argc, char *argv[])
 	{
 			sum += atoi(argv[i]);
 	}
-		
+
 	printf("%d\n", sum);
-		
+
 	return (0);
 }
