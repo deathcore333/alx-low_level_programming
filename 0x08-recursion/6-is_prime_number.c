@@ -2,8 +2,9 @@
 
 /**
  * is_prime_number - function that checks for prime numbers
- * @n: number to check
- *
+ * @n: number
+ * @f: factor check
+ * @p: possible prime
  * Return: 1 for prime numbers, 0 otherwise
  */
 
@@ -13,13 +14,13 @@ int is_prime_number(int n)
 {
 	if (n == 2)
 		return (1);
-	else 
+	else
 		return (prime_check(2, n));
 }
 
 
 /**
- * prime_check - checks prime numbers 
+ * prime_check - checks prime numbers
  * @f: factor check
  * @p: possible prime
  *
@@ -33,5 +34,5 @@ int prime_check(int f, int p)
 	else if (f > p / 2)
 		return (1);
 	else
-		return(prime_check(f + 1, p));
+		return (prime_check(f + 1, p));
 }
