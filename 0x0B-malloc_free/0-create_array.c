@@ -8,7 +8,7 @@
  * @c: characters to assign
  *
  * Return: Null if the size is 0 or function fails
- * 	Otherwise - point to the array
+ *	Otherwise - point to the array
  */
 
 char *create_array(unsigned int size, char c)
