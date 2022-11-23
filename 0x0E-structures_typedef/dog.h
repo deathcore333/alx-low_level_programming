@@ -1,35 +1,28 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef DOG_H
+#define DOG_H
 
 /**
- * user - a function that prints out a user's profile
+ * struct my_dog - describes a dog
+ * @name: the dog's name
+ * @age: The dog's age
+ * @owner: The owner
  */
 
-struct Dog
+struct dog
 {
 	char *name;
-	int age;
+	float age;
 	char *owner;
-}
+};
 
 /**
- * dog - a function that defines user
- *@name - Dogname
- *@age - age
- *@owner - Owner's name
- *
- * Return - user
+ * dog_t - typedef for struct dog
  */
 
-struct Dog *my_dog(char *name, int age, char *owner)
-{
-	struct Dog  *dog;
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
-	dog = malloc(sizeof(struct dog);
-	if (dog == NULL)
-		return(NULL);
-	dog->name = name;
-	dog->age = age;
-	dog->owner = owner;
-}
+#endif /* DOG_H */
 
