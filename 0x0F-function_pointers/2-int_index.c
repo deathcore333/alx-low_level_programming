@@ -10,7 +10,7 @@
  * Return: -1 if no lements match or 0 otherwise
  */
 
-int int_index(int *array, int size, int (*cmp)(int));
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int index;
 
