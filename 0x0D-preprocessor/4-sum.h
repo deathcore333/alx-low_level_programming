@@ -2,9 +2,9 @@
 #define SUM_H
 
 /**
- * A function like macro that computes the sum of numbers (x, y)
+ * A function like macro that computes the sum of numbers SUM(x, y)
  */
 
-#define SUM (x, y) ((x) + (y))
+#define SUM(x, y) ((x) + (y))
 
 #endif
