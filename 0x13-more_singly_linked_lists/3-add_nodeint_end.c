@@ -5,8 +5,8 @@
 * @head: the address of the first node
 * @n: integer containing address of the new node
 *
-* Return: NULL on failure 
-* 	New address on success
+* Return: NULL on failure
+*	New address on success
 */
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
