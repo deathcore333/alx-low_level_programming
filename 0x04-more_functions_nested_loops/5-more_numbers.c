@@ -1,27 +1,25 @@
-#include "main.h"
-
-/**
- * more_numbers - a function that prints numbers ten times
+/*
+ * File: 5-more_numbers.c
+ * Auth: Brennan D Baraban
  */
 
+#include "holberton.h"
+
+/**
+ * more_numbers - Prints the numbers 0-14 ten times.
+ */
 void more_numbers(void)
 {
-	int i, j;
-	
-	i = 0;
-	while (i <= 9)
-	{
-		for(j = 0; j <= 14; j++)
-		{
-			while (j > 9)
-			{
-				_putchar((j / 10) + '0');
-			}
-			_putchar((j % 10) + '0');
-		}
-	i++;
-	}
-	
-	_putchar('\n');
+	int num, count;
 
+	for (count = 0; count <= 9; count++)
+	{
+		for (num = 0; num <= 14; num++)
+		{
+			if (num > 9)
+				_putchar((num / 10) + '0');
+			_putchar((num % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }

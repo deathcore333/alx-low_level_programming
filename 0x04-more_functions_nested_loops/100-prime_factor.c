@@ -1,11 +1,16 @@
+/*
+ * File: 100-prime_factor.c
+ * Auth: Brennan D Baraban
+ */
+
 #include <stdio.h>
 
 /**
- * main - a program that prints the largest prime factor of a number 612852475143 
+ * main - Finds and prints the largest prime
+ *        factor of the number 612852475143.
  *
- * Return: Always 0
+ * Return: Always 0.
  */
-
 int main(void)
 {
 	long prime = 612852475143, div;

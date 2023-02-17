@@ -1,31 +1,37 @@
-#include "main.h"
-
-/**
- * print_triangle - a function that prints triangles followed by a new line
- *@size - the number of times it prints
+/*
+ * File: 10-print_triangle.c
+ * Auth: Brennan D Baraban
  */
 
-void print_triangles(int size)
+#include "holberton.h"
+
+/**
+ * print_triangle - Prints a triangle, using the character #.
+ * @size: The size of the triangle.
+ */
+void print_triangle(int size)
 {
-	int i, j;
+	int hash, index;
 
 	if (size > 0)
 	{
-		for (i = 1; i <= size; i++)
+		for (hash = 1; hash <= size; hash++)
 		{
-			for (j = size - i; j > 0; j--)
-			{
+			for (index = size - hash; index > 0; index--)
 				_putchar(' ');
-			}
-			for (j = 0; j < i; j++)
-			{
-				_putchar('#');
-			}
 
-			if (i == size)
+			for (index = 0; index < hash; index++)
+				_putchar('#');
+
+			if (hash == size)
 				continue;
+
 			_putchar('\n');
 		}
-		_putchar('\n');
 	}
+
+	_putchar('\n');
 }
+
+
+

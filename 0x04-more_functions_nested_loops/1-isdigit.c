@@ -1,20 +1,21 @@
-#include "main.h"
-
-/**
- *_isdigit - a function that checks for a digit
- *@c: the integer under check
- *
- * Return: 1 if c is a digit 0 otherwise
+/*
+ * File: 1-isdigit.c
+ * Auth: Brennan D Baraban
  */
 
+#include "holberton.h"
+
+/**
+ * _isdigit - Checks for a digit (0-9).
+ * @c: The number to be checked.
+ *
+ * Return: 1 if the number is a digit, 0 otherwise.
+ */
 int _isdigit(int c)
 {
-	if (c >= 0 && c <=9)
-	{
+	if (c >= '0' && c <= '9')
 		return (1);
-	}
-	else 
-	{
+
+	else
 		return (0);
-	}
 }

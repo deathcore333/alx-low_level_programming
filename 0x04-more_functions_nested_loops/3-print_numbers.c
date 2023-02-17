@@ -1,20 +1,19 @@
-#include "main.h"
+/*
+ * File: 3-print_numbers.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
 
 /**
- * print_numbers - a function that prints all numbers followed by a new line
- *
+ * print_numbers - Prints the numbers from 0-9.
  */
 void print_numbers(void)
 {
-	int i;
+	int num;
 
-	i = 0;
+	for (num = 0; num <= 9; num++)
+		_putchar((num % 10) + '0');
 
-	while (i <= 9)
-	{
-		_putchar((i % 10) + '0');
-		i++;
-	}
 	_putchar('\n');
-
 }
