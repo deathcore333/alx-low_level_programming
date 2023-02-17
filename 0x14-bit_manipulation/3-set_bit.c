@@ -1,8 +1,3 @@
-/*
- * File: 3-set_bit.c
- * Auth: Brennan D Baraban
- */
-
 #include "holberton.h"
 
 /**
