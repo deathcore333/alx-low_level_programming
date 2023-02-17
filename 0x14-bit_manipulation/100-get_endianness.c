@@ -1,4 +1,9 @@
-#include "main.h"
+/*
+ * File: 100-get_endianness.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
 
 /**
  * get_endianness - Checks the endianness.

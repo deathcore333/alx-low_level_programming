@@ -1,4 +1,9 @@
-#include "main.h"
+/*
+ * File: 4-clear_bit.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
 
 /**
  * clear_bit - Sets the value of a bit at a given index to 0.
