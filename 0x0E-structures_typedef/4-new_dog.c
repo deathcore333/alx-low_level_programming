@@ -1,88 +1,50 @@
 #include "dog.h"
 #include <stdlib.h>
-
-int _strlen(char *str);
-char *_strcopy(char *dest, char *src);
-dog_t *new_dog(char *name, float age, char *owner);
+#include <stdio.h>
 
 /**
- * _strlen - finds the lenghth of string
- * @str: The string
- *
- * Return: string length
- */
-
-int _strlen(char *str)
-{
-	int len = 0;
-
-	while (*str++)
-		len++;
-
-	return (len);
-}
-
-/**
- * _strcopy - function that copies a string pinted by a src including
- * the null byte, to a buffer pointed by dest
- * @dest: the buffer storing the copied string
- * @src: string source
- *
- * Return: a pointer to the dest
- */
-
-char *_strcopy(char *dest, char *src)
-{
-	int i = 0;
-
-	for (i = 0; src[i]; i++)
-		dest[i] = src[i];
-
-	dest[i] = '\0';
-
-	return (dest);
-}
-
-/**
- * new_dog - function that creates a new dog
- * @name: dog name
- * @age: dog age
- * @owner: dogowner
- *
- * Return: Null on failure store name and owner otherwise
+ * new_dog - new dog
+ * @name: name's dog
+ * @age: age's dog
+ * @owner: owner's dog
+ * Return: newdog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *mbwa;
 
-	if (name == NULL || age < 0 || owner == NULL)
-		return (NULL);
+	int i = 0, j = 0, k;
+	dog_t *doge;
 
-	mbwa = malloc(sizeof(dog_t));
-	if (mbwa == NULL)
+	while (name[i] != '\0')
+		i++;
+	while (owner[j] != '\0')
+		j++;
+	doge = malloc(sizeof(dog_t));
+	if (doge == NULL)
 	{
+		free(doge);
 		return (NULL);
 	}
-
-	mbwa->name = malloc(sizeof(char) * (_strlen(name) + 1));
-	if (mbwa->name == NULL)
+	doge->name = malloc(i * sizeof(doge->name));
+	if (doge->name == NULL)
 	{
-		free(mbwa);
+		free(doge->name);
+		free(doge);
 		return (NULL);
 	}
-
-	mbwa->owner = malloc(sizeof(char) * (_strlen(owner) + 1));
-	if (mbwa->owner == NULL)
+	for (k = 0; k <= i; k++)
+		doge->name[k] = name[k];
+	doge->age = age;
+	doge->owner = malloc(j * sizeof(doge->owner));
+	if (doge->owner == NULL)
 	{
-		free(mbwa->name);
-		free(mbwa);
+		free(doge->owner);
+		free(doge->name);
+		free(doge);
 		return (NULL);
 	}
-
-	mbwa->name = _strcopy(mbwa->name, name);
-	mbwa->age;
-	mbwa->owner = _strcopy(mbwa->owner, owner);
-
-	return (mbwa);
+	for (k = 0; k <= j; k++)
+		doge->owner[k] = owner[k];
+	return (doge);
 }
