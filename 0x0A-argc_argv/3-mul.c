@@ -2,25 +2,24 @@
 #include <stdlib.h>
 
 /**
- * main - program that multipliers arguments followed by a new line
- * @argc: argument count
- * @argv: argument vector
- *
- * Return: Always 0, 1 otherwise
+ * main - this is a function to print its name
+ * @argc: argc param
+ * @argv: an array of a command listed
+ * Return: 0 for success
  */
-
 int main(int argc, char *argv[])
 {
+	int result, num1, num2;
+
 	if (argc != 3)
 	{
-		printf("Error\n");
-
+		printf("%s\n", "Error");
 		return (1);
 	}
-	else
-	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
 
-		return (0);
-	}
+	printf("%d\n", result);
+	return (0);
 }

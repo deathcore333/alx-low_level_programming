@@ -1,16 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - a function that prints the number of arguments passed into it
- * @argc: argument count
- * @argv: argument vector
- *
- * Return: argument count
+ * main - this is a function to print its name
+ * @argc: argc param
+ * @argv: an array of a command listed
+ * Return: 0 for success
  */
-
-int main(int argc, char __attribute__((__unused__)) *argv[])
+int main(int argc, char *argv[]  __attribute__((unused)))
 {
-	printf("%i\n", argc - 1);
-
+	printf("%d\n", argc - 1);
 	return (0);
 }

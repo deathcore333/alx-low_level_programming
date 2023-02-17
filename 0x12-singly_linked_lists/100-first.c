@@ -1,13 +1,11 @@
 #include <stdio.h>
 
-void __attribute__((constructor)) hare(void);
-
 /**
- * hare - prints a string before main function is executed
+ * premain - run before main
  */
-
-void hare(void)
+void __attribute__ ((constructor)) premain()
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+printf(
+"You're beat! and yet, you must allow,\nI bore my house upon my back!\n"
+);
 }
-

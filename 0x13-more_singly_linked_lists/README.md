@@ -1,25 +1,18 @@
-This directory contains more tasks on linked lists                        
+What is a linked list in C?
+A linked list can be defined as a collection of connected nodes. It is a linear data structure. A linked list contains two parts such as:-
 
-file one - prints all the elements of a list                                  
+Data Part:- Contains the data of the user.
+Pointer Part:- It points to the next member of the linked list.
 
-file two - contains file that returns the number of elements in a linked list 
+###
+Types of Linked List in C:-
+There are 3 types of linked list such as:-
 
-file three - adds a new node at the beggining of a list                       
+Singly Linked List
+Doubly Linked List
+Circular Linked List
 
-file four - adds new node at the end of the list                              
+##
 
-file five - frees a list                                                      
-
-file six - frees a list                                                       
-
-file seven - deletes the head of a node                                       
-
-file eight - returns the nth node of a linked list                            
-
-file nine - returns the sum of all the data (n) of a linked list              
-
-file ten - inserts a new node at a given position                             
-
-file eleven - deletes the node at index of alinkedlist                        
-
-four more advanced tasks
+Singly Linked List:-
+Singly linked list is the most common linked list among the others. The singly linked list can be traversed only in one direction. It is a collection of ordered sets of elements. In singly linked list, Each node has a data and a pointer to the next node.

@@ -1,15 +1,10 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _FUNCTION_POINTERS_
+#define _FUNCTION_POINTERS_
 
-/**
- * Header file containing the prototyes for all the functions  used in
- * 0x0F-function_pointers
- */
 #include <stdlib.h>
 
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
 int int_index(int *array, int size, int (*cmp)(int));
-
 
 #endif
