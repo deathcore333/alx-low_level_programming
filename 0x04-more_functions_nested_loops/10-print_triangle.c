@@ -1,9 +1,4 @@
-/*
- * File: 10-print_triangle.c
- * Auth: Brennan D Baraban
- */
-
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_triangle - Prints a triangle, using the character #.

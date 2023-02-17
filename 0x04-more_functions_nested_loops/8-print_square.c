@@ -1,9 +1,5 @@
-/*
- * File: 8-print_square.c
- * Auth: Brennan D Baraban
- */
 
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_square - Prints a squareusing the character #.
