@@ -12,13 +12,12 @@ int main(void)
 	printf("Infinite loop incoming :(\n");
 
 	i = 0;
-
-	while (i < 10)
-	{
-		putchar(i);
-		i++;
-	}
-/* no incremment set for int i hence the program is stuck in a loop that prints 0 */
+/*
+ *	while (i < 10)
+ *	{
+ *		putchar(i);
+ *	}
+*/
 	printf("Infinite loop avoided! \\o/\n");
 
 	return (0);
