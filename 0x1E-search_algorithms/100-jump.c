@@ -2,6 +2,7 @@
 
 /**
  * jump_search - searches array using jump_search algo
+ *
  * @array: pointer to first element
  * @size: number of elements in array
  * @value: search element
